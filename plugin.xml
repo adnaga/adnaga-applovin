@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    id="cordova-plugin-adnaga-applovin"
+    version="0.1.0">
+
+    <name>adnaga-applovin</name>
+    <description>adnaga applovin plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,adnaga,ads,ad,applovin</keywords>
+    <repo>https://github.com/adnaga/adnaga-applovin</repo>
+    <issue>https://github.com/adnaga/adnaga-applovin/issues</issue>
+
+    <js-module src="www/adnaga_applovin.js" name="adnaga_applovin">
+        <clobbers target="adnaga_applovin" />
+    </js-module>
+
+    <preference name="APPLOVIN_KEY" />
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+            <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+
+            <meta-data android:name="applovin.sdk.key" android:value="$APPLOVIN_KEY" />
+        </config-file>
+
+        <source-file src="src/android/applovin-sdk-6.2.4.jar" target-dir="libs" framework="true" />
+        <source-file src="src/android/AdnagaApplovin.java" target-dir="src/com/adnaga/"/>
+    </platform>
+</plugin>

@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-adnaga-applovin",
+  "version": "0.1.0",
+  "description": "show applovin ads in adnaga",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adnaga/adnaga-applovin.git"
+  },
+  "cordova": {
+    "id": "cordova-plugin-adnaga-applovin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adnaga/adnaga-applovin/issues"
+  },
+  "homepage": "https://github.com/adnaga/adnaga-applovin#readme"
+}
