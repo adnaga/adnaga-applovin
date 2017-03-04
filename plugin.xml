@@ -6,7 +6,7 @@
     xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest"
     xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
     id="cordova-plugin-adnaga-applovin"
-    version="0.1.0">
+    version="0.2.0">
 
     <name>adnaga-applovin</name>
     <description>adnaga applovin plugin</description>

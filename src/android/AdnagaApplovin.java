@@ -76,6 +76,14 @@ public class AdnagaApplovin implements IPlugin {
         });
     }
 
+    public void onPause() {
+
+    }
+
+    public void onResume() {
+
+    }
+
     private class MyAppLovinListener implements AppLovinAdDisplayListener, AppLovinAdLoadListener, AppLovinAdClickListener {
         @Override
         public void adDisplayed(AppLovinAd appLovinAd) {
